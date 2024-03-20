@@ -58,7 +58,7 @@
 								<!-- Sidebar -->
 									<section id="sidebar">
 										<section>
-											<h3>What is IAQ?</h3>
+											<h3>What is IAQ testing?</h3>
 											<p>Indoor Air Quality (IAQ) testing is an environmental testing process that aims to measure the amount of potentially detrimental contaminants. 
 												The measurements taken often include Carbon Dioxide (CO<sub>2</sub>), Carbon Monoxide (CO), Volatile Organic Compounds (VOCs), 2.5 micron diameter particulates (PM2.5), or 10 micron diameter particulates (PM10). 
 												Learn more about IAQ standards below.</p>
@@ -72,7 +72,23 @@
 										<section>
 											<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
 											<h3>Codebase</h3>
-											<p>View 1 year of code development progress at my Github. Click below to visit.</p>
+											<pre>
+												<code>SDK
+- Flutter
+Frontend/Backend
+- Dart
+Data Handling
+- SQLite (sqflite)
+- shared_preferences
+UI Enhancements
+- easy_form_kit
+- share_plus
+External Services 
+- https
+- Excel
+- google_maps_webservice
+</code></pre>
+											<p>Click below to visit and view the codebase on my Github.</p>
 											<footer>
 												<ul class="actions">
 													<li><a href="https://github.com/sohum1094/IAQuick" class="button">Codebase</a></li>
@@ -89,17 +105,13 @@
 										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
 										<h3>Introduction</h3>
 										<p>Indoor Air Quality (IAQ) testing is a frequently run test executed by environmental engineering to verify healthy air quality in high-risk buildings. 
-											Mid-size firms in the Illinois area execute 400+ tests annually, each one taking 5+ man hours. 
+											One mid-size firm in the Illinois area executes 400+ tests annually, each one taking 5+ man hours. 
 											Hundreds of thousands of people rely on these tests to mitigate air related health issues.</p>
-										<p>I am developing IAQuick as an accessible, optimized solution to old processes in the environmental engineering industry. 
-											The solution aims to revolutionize the IAQ testing process by enabling surveyors to record, process, format, and export air quality readings in a streamlined process.
+										<p>I am developing IAQuick as an accessible, optimized solution to old processes in the environmental engineering industry. It is Enabling surveyors to record, process, format, and export air quality readings efficiently.
 											IAQuick is increasing time efficiency of IAQ testing by over 85%.</p>
-										<h4>Background</h4>
-										<p>In 2021 I interned at an environmental engineering company that executes IAQ tests over 400 times per year. 
-											During my internship I worked with the IAQ team for the summer in a variety of responsibilities. 
-											This gave me insight to the opportunity for an increase in efficiency.</p>
-										<h4>Problem</h4>
-										<p>Each survey that went through the company had a multi-step process.</p>
+										<h4>Background & Problem</h4>
+										<p>An environmental engineering company executes IAQ tests over 400 times per year. </p>
+										<p>Each survey goes through a multi-step process.</p>
 										<div class="table-wrapper">
 											<table>
 												<thead>
@@ -112,38 +124,23 @@
 												<tbody>
 													<tr>
 														<td>1</td>
-														<td>Collecting survey data on paper in the field</td>
-														<td>1</td>
+														<td>Recording and uploading survey info</td>
+														<td>1.5</td>
 													</tr>
 													<tr>
 														<td>2</td>
-														<td>Scanning each survey in the office</td>
-														<td>.5</td>
-													</tr>
-													<tr>
-														<td>3</td>
-														<td>Sending the images to another team member</td>
-														<td>.5</td>
-													</tr>
-													<tr>
-														<td>4</td>
-														<td>Transcription of the image to an Excel sheet</td>
+														<td>Transcription of uploaded info to Excel </td>
 														<td>1</td>
 													</tr>
 													<tr>
-														<td>5</td>
-														<td>Quality check and export to PDF</td>
-														<td>.5</td>
+														<td>3</td>
+														<td>Export and PDF creation</td>
+														<td>1</td>
 													</tr>
 													<tr>
-														<td>6</td>
-														<td>Writing of letter to site admin team</td>
-														<td>.5</td>
-													</tr>
-													<tr>
-														<td>7</td>
-														<td>Submission of results to administrators</td>
-														<td>.5</td>
+														<td>4</td>
+														<td>Report writing and submission to admin</td>
+														<td>1</td>
 													</tr>
 												</tbody>
 												<tfoot>
@@ -154,22 +151,21 @@
 												</tfoot>
 											</table>
 										</div>
-										<h4>Proposition</h4>
-										<p>The process as laid above, has many potential areas for inefficiency and human error.
-											I aimed to improve a process that took nearly 1800 hours annually (4.5 hours * 200 sites * 2 times annually).
-											The IAQuick app is designed to reduce the previous process by merging and avoiding various steps. 
+										<p>There is a large potential for inefficiency and human error.</p>
+										<h4>Proposition & Updated Process</h4>
+										<p> I aimed to improve a process that consumed >1800 hours annually (4.5 hours * 200 sites * 2 times annually).
+											The IAQuick app is designed to reduce the wasted time by merging and avoiding unnecessary steps. 
 										</p>
-										<h4>New Process</h4>
 										<a href="#" class="image fit"><img src="images/Data Input.png" alt="" /></a>
 										<div class="table-wrapper">
 											<table>
-												<thead>
+												<!-- <thead>
 													<tr>
 														<th>Step</th>
 														<th>Description</th>
 														<th>Time (hrs)</th>
 													</tr>
-												</thead>
+												</thead> -->
 												<tbody>
 													<tr>
 														<td>1</td>
@@ -207,11 +203,11 @@
 												<li>Hot reload functionality for rapid development.</li>
 											</ul>
 										<h4>Development Methodology</h4>
-										<p>This application is being developed using an MVP architecture to ensure quicker time to market for specific applications,
-											 market validation for future growth, and enable me to continuously ask the team at a local consulting firm for feedback.</p>
+										<p>This application is being developed using an MVP architecture to ensure quicker time to market,
+											 market validation for future growth, and enable me to continuously ask the local firm for feedback.</p>
 										<h4>Data Storage</h4>
 										<p>After experimentation with CSV storage, Google Firestore, and direct storage in Excel Sheets, SQLite was determined to be the ideal database. 
-											The platform's flexibility in design coupled with my previous experience, and efficiency at size made it a logical choice.</p>
+											The platform's flexibility in design and efficiency at size made it a logical choice.</p>
 										<h4>Challenges</h4>
 										<p>This development process gave me the opportunity to resolve a wider variety of issues from practical issues regarding the end-user workflow, issues with data storage, add using logins, etc. Main issues included: </p>
 										<div class="col-6 col-12-xsmall">
