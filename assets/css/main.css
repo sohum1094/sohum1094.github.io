@@ -100,8 +100,9 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
 		font-family: "Roboto", Helvetica, sans-serif;
+		/* font-family: __DM_Sans_9c26c3,__DM_Sans_Fallback_9c26c3; */
 		font-size: 15pt;
-		font-weight: 100;
+		font-weight: 180;
 		line-height: 1.75em;
 	}
 
@@ -681,6 +682,8 @@ input, select, textarea {
 
 /* Row */
 
+	
+
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -924,6 +927,12 @@ input, select, textarea {
 
 		@media screen and (max-width: 1680px) {
 
+			.row > .col-4-xlarge,
+			.row > .col-6-medium,
+			.row > .col-12-xsmall {
+				width: 50% !important;
+			}
+			
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1169,6 +1178,12 @@ input, select, textarea {
 
 		@media screen and (max-width: 1280px) {
 
+			.row > .col-4-xlarge,
+			.row > .col-6-medium,
+			.row > .col-12-xsmall {
+				width: 50% !important;
+			}
+			
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1414,6 +1429,12 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
+			.row > .col-4-xlarge,
+			.row > .col-6-medium,
+			.row > .col-12-xsmall {
+				width: 50% !important;
+			}
+			
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -2962,6 +2983,11 @@ input, select, textarea {
 			top: 50%;
 			width: 2em;
 			z-index: 1;
+		}
+
+		.next-arrow-container {
+			text-align: center; /* Center the arrow horizontally */
+			padding-top: 40px; /* Space above the arrow */
 		}
 
 /* Spotlight */
