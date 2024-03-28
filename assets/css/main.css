@@ -2651,6 +2651,11 @@ input, select, textarea {
 
 /* Actions */
 
+	.download-button-container {
+		text-align: center; /* Center align the container's content */
+		padding-bottom: 20px; /* Adjust this value as per your design needs */
+	}
+
 	ul.actions {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2660,11 +2665,13 @@ input, select, textarea {
 		list-style: none;
 		margin-left: -1em;
 		padding-left: 0;
+		text-align: center;
 	}
 
 		ul.actions li {
 			padding: 0 0 0 1em;
 			vertical-align: middle;
+			text-align: center;
 		}
 
 		ul.actions.special {
@@ -2695,6 +2702,12 @@ input, select, textarea {
 				ul.actions.stacked li:first-child {
 					padding-top: 0;
 				}
+
+		
+		ul.actions.centered {
+			justify-content: center; /* Center the items for flex container */
+			width: 100%; /* Ensure full width to center content properly */
+		}
 
 		ul.actions.fit {
 			width: calc(100% + 1em);
@@ -2727,7 +2740,6 @@ input, select, textarea {
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
 				flex-direction: column;
-				margin-left: 0;
 				width: 100% !important;
 			}
 
